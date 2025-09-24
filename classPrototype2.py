@@ -15,6 +15,7 @@ from PyQt5.QtCore import QSize
 # for setting the background color of the window to white
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QPalette, QColor
+import os
 import sys
 from resource_utils import get_resource_path # Importing class and function created by Claude 3.7 to make the executable load images correctly
 
@@ -2037,6 +2038,18 @@ class Ui_MainWindow(object):
         
 if __name__ == "__main__":
     import sys
+    # Enable high DPI scaling for PyQt5
+    # Disable automatic screen scaling to avoid conflicts
+    os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "0"
+
+    # Set a manual scale factor less than 1.
+    # A value of 0.8 would shrink the UI to 80% of its normal size.
+    os.environ["QT_SCALE_FACTOR"] = "0.75"
+
+    # For PyQt5, it is also good practice to enable high-DPI pixmaps
+    # to ensure that downscaled images don't lose quality.
+    if hasattr(QtCore.Qt, 'AA_UseHighDpiPixmaps'):
+        QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True)
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
 
