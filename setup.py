@@ -37,7 +37,7 @@ def build():
         f'--add-data={os.path.join(current_dir, "sharp.png")}{separator}.',
         f'--add-data={os.path.join(current_dir, "trebelclef.png")}{separator}.',
         f'--add-data={os.path.join(current_dir, "wholenote.png")}{separator}.',
-        
+        l
         # Add a hook to handle resource paths
         '--additional-hooks-dir=.',
         

@@ -1,3 +1,0 @@
-([('NoteTranspositionProgram',
-   '/Users/jared/Music-Note-Transposer/dist/NoteTranspositionProgram',
-   'EXECUTABLE')],)
