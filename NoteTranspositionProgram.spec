@@ -5,7 +5,7 @@ a = Analysis(
     ['classPrototype2.py'],
     pathex=[],
     binaries=[],
-    datas=[('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\ImageHoverWidget2.py', '.'), ('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\resource_utils.py', '.'), ('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\altoclef.png', '.'), ('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\arrow.png', '.'), ('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\bassclef3.png', '.'), ('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\flat.png', '.'), ('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\natural.png', '.'), ('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\sharp.png', '.'), ('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\trebelclef.png', '.'), ('c:\\Users\\Jared Obid\\IBProjectMac\\jaredproj\\wholenote.png', '.')],
+    datas=[('/Users/jared/Music-Note-Transposer/ImageHoverWidget2.py', '.'), ('/Users/jared/Music-Note-Transposer/resource_utils.py', '.'), ('/Users/jared/Music-Note-Transposer/altoclef.png', '.'), ('/Users/jared/Music-Note-Transposer/arrow.png', '.'), ('/Users/jared/Music-Note-Transposer/bassclef3.png', '.'), ('/Users/jared/Music-Note-Transposer/flat.png', '.'), ('/Users/jared/Music-Note-Transposer/natural.png', '.'), ('/Users/jared/Music-Note-Transposer/sharp.png', '.'), ('/Users/jared/Music-Note-Transposer/trebelclef.png', '.'), ('/Users/jared/Music-Note-Transposer/wholenote.png', '.')],
     hiddenimports=[],
     hookspath=['.'],
     hooksconfig={},
@@ -35,4 +35,10 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+)
+app = BUNDLE(
+    exe,
+    name='NoteTranspositionProgram.app',
+    icon=None,
+    bundle_identifier=None,
 )

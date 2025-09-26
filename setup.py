@@ -8,6 +8,7 @@ from setuptools import setup, find_packages
 # Define the path to your main script
 script_path = 'classPrototype2.py'
 
+# 
 # Function to run PyInstaller
 def build():
     # Get the absolute path to the current directory
