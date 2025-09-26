@@ -22,8 +22,8 @@ A Python-based music notation application built with PyQt5 that allows users to 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/music-notation-app.git
-cd music-notation-app
+git clone https://github.com/jobid0212/Music-Note-Transposer.git
+cd Music-Note-Transposer
 
 # Create and activate virtual environment (optional but recommended)
 python -m venv venv
@@ -40,8 +40,8 @@ python setup.py
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/music-notation-app.git
-cd music-notation-app
+git clone https://github.com/jobid0212/Music-Note-Transposer.git
+cd Music-Note-Transposer
 
 # Create and activate virtual environment (optional but recommended)
 python3 -m venv venv
